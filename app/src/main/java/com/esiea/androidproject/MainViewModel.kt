@@ -8,7 +8,7 @@ class MainViewModel : ViewModel() {
 
     init {
         counter.value = 0
-    } //by me
+    }
 
     fun onClickedIncrement() {
         counter.value = (counter.value ?: 0) + 1

@@ -1,6 +1,5 @@
 package com.esiea.androidproject.presentation.main
 
-import androidx.annotation.RestrictTo
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,7 +7,6 @@ import com.esiea.androidproject.domain.entity.User
 import com.esiea.androidproject.domain.usecase.CreateUserUseCase
 import com.esiea.androidproject.domain.usecase.GetUserUseCase
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MainViewModel(

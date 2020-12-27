@@ -23,8 +23,8 @@ class MainViewModel(
 
     fun onClickedIncrement(emailUser: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            createUserUseCase.invoke(User("test"))
-            val user = getUserUseCase.invoke("test")
+            createUserUseCase.invoke(User(emailUser))
+            val user = getUserUseCase.invoke(emailUser)
         }
     }
 }

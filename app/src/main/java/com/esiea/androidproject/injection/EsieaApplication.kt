@@ -1,4 +1,4 @@
-package com.esiea.androidproject.Injection
+package com.esiea.androidproject.injection
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext
@@ -10,7 +10,7 @@ class EsieaApplication : Application() {
         // start Koin !
         startKoin {
             androidContext(this@EsieaApplication)
-            modules(presentationModule)
+            modules(presentationModule, domainModule, dataModule)
         }
     }
 }

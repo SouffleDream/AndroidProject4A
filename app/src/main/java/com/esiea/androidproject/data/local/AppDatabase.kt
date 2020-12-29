@@ -6,7 +6,7 @@ import com.esiea.androidproject.data.local.models.UserLocal
 
 @Database(entities = arrayOf(
     UserLocal::class
-), version = 1)
+), version = 2)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun databaseDao() : DatabaseDao
 }

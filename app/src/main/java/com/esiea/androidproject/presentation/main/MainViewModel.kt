@@ -1,5 +1,7 @@
 package com.esiea.androidproject.presentation.main
 
+import android.content.Intent
+import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,21 +10,34 @@ import com.esiea.androidproject.domain.usecase.CreateUserUseCase
 import com.esiea.androidproject.domain.usecase.GetUserUseCase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainViewModel(
-    private val createUserUseCase: CreateUserUseCase,
-    private val getUserUseCase: GetUserUseCase
+    private val getUserUseCase: GetUserUseCase,
+    private val createUserUseCase: CreateUserUseCase
 ) : ViewModel() {
-    val counter : MutableLiveData<Int> = MutableLiveData()
+    val loginLiveData : MutableLiveData<LoginStatus> = MutableLiveData()
 
-    init {
-        counter.value = 0
+    fun onClickedLogin(emailUser: String, password: String) {
+        viewModelScope.launch(Dispatchers.IO) {
+            val user =getUserUseCase.invoke(emailUser, password)
+            val loginStatus = if (user != null && (emailUser != "" || password != "")){
+                LoginSuccess(user.email, user.password)
+            } else {
+                LoginError
+            }
+            withContext(Dispatchers.Main){
+                loginLiveData.value = loginStatus
+            }
+        }
     }
 
-    fun onClickedIncrement(emailUser: String) {
+    fun onChangeView(){
+    }
+
+    fun onClickedCreateAccount(emailUser: String, password: String){
         viewModelScope.launch(Dispatchers.IO) {
-            createUserUseCase.invoke(User(emailUser))
-            val user = getUserUseCase.invoke(emailUser)
+            val user =createUserUseCase.invoke(User(emailUser, password))
         }
     }
 }

@@ -26,7 +26,6 @@ class CatActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cats)
-        title = "Cat"
         // setting up viewModel
         viewModel = ViewModelProviders.of(this).get(CatViewModel::class.java)
 

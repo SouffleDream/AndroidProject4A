@@ -55,7 +55,7 @@ Elle est basée sur une clean architecture et de modèle MVVM et l'utilisation d
 * Affichage d’une liste
 * Design
 
-## Notions techniques supplémentaires réalisés :
+## Notions techniques supplémentaires réalisées :
 * Mise en place de liste de manière différentes avec des DataSource différentes (Locale et En ligne)
 * Mise en place d'un lecteur video à partir d'une API (YouTubePlayerAPI) avec utilisation d'une authentificationKey
 * Blocage des boutons LogIn et Create Account tant qu'ils sont vides ou que le mail n'est pas valide

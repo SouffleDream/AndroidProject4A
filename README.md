@@ -10,37 +10,37 @@ Elle est basée sur une clean architecture et de modèle MVVM et l'utilisation d
 
 * Page de login
 
-<image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/login.png" width="200" height="400">  <image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/loginValid.png" width="200" height="400">
+<image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/login.png" width="200" height="400">  <image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/loginValid.png" width="200" height="400">
   
   
 * PopUp avec Message d'erreur Login
 
-<image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/messageError.png" width="200" height="400"> <image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/messageError2.png" width="200" height="400">
+<image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/messageError.png" width="200" height="400"> <image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/messageError2.png" width="200" height="400">
  
  
 * Menu
 
-<image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/menu.png" width="200" height="400">
+<image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/menu.png" width="200" height="400">
  
  
 * Génération d'une image aléatoire de chat (CatsAPI)
 
-<image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/imageCat1.png" width="200" height="400">  <image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/imageCat2.png" width="200" height="400">
+<image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/imageCat1.png" width="200" height="400">  <image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/imageCat2.png" width="200" height="400">
 
 
 * Affichage d'une liste d'image de couché de Soleil (récupération images à partir d'URL) puis Zoom sur les photos après clic
 
-<image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/sunsetList.png" width="200" height="400"> <image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/sunsetListZoom.png" width="200" height="400">
+<image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/sunsetList.png" width="200" height="400"> <image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/sunsetListZoom.png" width="200" height="400">
 
 
 * Affichage d'une liste de version d'Android (DataLocal)
 
-<image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/androidList2.png" width="200" height="400">
+<image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/androidList2.png" width="200" height="400">
 
 
 * Génération (visionnage possible) d'une vidéo Youtube (YoutubePlayerAPI)
 
-<image src="hhttps://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/videoYouTube.png" width="200" height="400">
+<image src="https://github.com/SouffleDream/AndroidProject4A/blob/master/Screenshosts/videoYouTube.png" width="200" height="400">
 
 
 

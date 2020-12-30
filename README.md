@@ -1,12 +1,12 @@
 # AndroidProject4A
 Created by Elise LLEDO
 
-## Description du projet 
+## Description du projet :
 
 Ce projet est une application android mobile en Kotlin créée sous Android Studio.
 Elle est basée sur une clean architecture et de modèle MVVM et l'utilisation de Koin avec une base de donnée construite avec Room
 
-## Eléments contenu dans l'application:
+## Contenu de l'application :
 
 * Page de login
 
@@ -44,7 +44,7 @@ Elle est basée sur une clean architecture et de modèle MVVM et l'utilisation d
 
 
 
-## Notions techniques attendues:
+## Notions techniques attendues :
 
 * Language Kotlin / Swift si iOS
 * Architecture MVVM
@@ -62,6 +62,6 @@ Elle est basée sur une clean architecture et de modèle MVVM et l'utilisation d
 * Gestion des comptes (Verification existance de l'utilisateur lors de la création de compte et du Login)
 * Chargement d'image et Affichage avec l'utilisation de la librairie Picasso
 
-## Aperçu vidéo du projet
+## Aperçu vidéo du projet :
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/t3JRYELXuPQ/0.jpg)](https://www.youtube.com/watch?v=t3JRYELXuPQ)

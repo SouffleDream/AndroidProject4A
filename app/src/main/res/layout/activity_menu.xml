@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_image_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Image API"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/button_list_api"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/cat"
+        app:layout_constraintEnd_toStartOf="@+id/button_list_local"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/button_list_api"
+        android:layout_width="223dp"
+        android:layout_height="45dp"
+        android:text="List with image online"
+        app:layout_constraintBottom_toTopOf="@+id/sunsetView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_youtube_api"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <ImageView
+        android:id="@+id/sunsetView"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/sunset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/button_youtube_api"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Youtube PLayer API"
+        app:layout_constraintBottom_toTopOf="@+id/youtubeView"
+        app:layout_constraintEnd_toEndOf="@+id/youtubeView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/youtubeView"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/youtube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/androidView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+    </ImageView>
+
+
+    <Button
+        android:id="@+id/button_list_local"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="List with LocalData"
+        app:layout_constraintBottom_toTopOf="@+id/androidView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button_youtube_api"
+        app:layout_constraintTop_toBottomOf="@+id/sunsetView" />
+
+    <ImageView
+        android:id="@+id/androidView"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/menu_android_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunsetView">
+
+    </ImageView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,8 @@
     xmlns:dist="http://schemas.android.com/apk/distribution"
     package="com.esiea.androidproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <dist:module dist:instant="true" />
 
     <application
@@ -21,12 +23,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presentation.second.SecondActivity"
+            android:name=".presentation.menu.MenuActivity"
             android:parentActivityName=".presentation.main.MainActivity">
-            <!-- The meta-data tag is required if you support API level 15 and lower -->
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".presentation.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".presentation.menu.first.FirstActivity"
+            android:parentActivityName=".presentation.menu.MenuActivity">
+        </activity>
+        <activity
+            android:name=".presentation.menu.first.SunsetPhotoActivity"
+            android:parentActivityName=".presentation.menu.first.FirstActivity">
+        </activity>
+        <activity
+            android:name=".presentation.menu.second.SecondActivity"
+            android:parentActivityName=".presentation.menu.MenuActivity">
+        </activity>
+        <activity
+            android:name=".presentation.menu.third.YoutubeActivity"
+            android:parentActivityName=".presentation.menu.MenuActivity">
+        </activity>
+
+        <activity
+            android:name=".presentation.menu.fourth.CatActivity"
+            android:parentActivityName=".presentation.menu.MenuActivity">
         </activity>
     </application>
 
